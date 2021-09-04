@@ -1,0 +1,17 @@
+<main role="main" class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h2 class="mt-3 pt-3">Fotograflar</h2>
+            
+            <div id="image-container">
+                <img *ngFor="let photo of photos" src="{{photo.imageUrl}}">  
+            </div>
+
+        </div>
+        <div *ngIf="city" class="col-md-4">
+            <h2 class="mt-3 pt-3">Notlarım</h2>
+            {{city?.description}}
+        </div>
+    </div>
+</main>
+
